@@ -1,364 +1,90 @@
 <!DOCTYPE html><html lang="zh-Hant"><head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#7a1f38">
-<title>LA 行程 · 7/19–7/23</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#7a1f38"><title>Giloo LA 行程 · 7/19–7/23</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
-:root{
-  --wine:#7a1f38; --wine-soft:#a24a60; --paper:#faf8f5; --ink:#161311;
-  --blue:#1a4fa0; --blue-bg:#eaf1fc; --warn:#b3261e; --warn-bg:#fdf1f0;
-  --line:#e2ddd6; --muted:#6b635c;
-}
+:root{--wine:#7a1f38;--wine-soft:#a24a60;--paper:#faf8f5;--ink:#161311;
+--blue:#1a4fa0;--blue-bg:#eaf1fc;--warn:#b3261e;--warn-bg:#fdf1f0;--line:#e2ddd6;--muted:#6b635c}
 html{-webkit-text-size-adjust:100%}
 body{font-family:-apple-system,"PingFang TC","Heiti TC","Helvetica Neue",sans-serif;
-  background:var(--paper);color:var(--ink);line-height:1.5;font-size:16px;
-  padding-bottom:env(safe-area-inset-bottom)}
-
+background:var(--paper);color:var(--ink);line-height:1.5;font-size:16px;padding-bottom:env(safe-area-inset-bottom)}
 header{background:var(--wine);color:#fff;padding:calc(env(safe-area-inset-top) + 16px) 18px 14px}
-header h1{font-size:20px;font-weight:700;letter-spacing:.3px}
-header .sub{font-size:12.5px;opacity:.85;margin-top:3px}
-
+header h1{font-size:20px;font-weight:700}header .sub{font-size:12.5px;opacity:.85;margin-top:3px}
 nav{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line);
-  display:flex;overflow-x:auto;scrollbar-width:none;box-shadow:0 1px 6px rgba(0,0,0,.05)}
+display:flex;overflow-x:auto;scrollbar-width:none;box-shadow:0 1px 6px rgba(0,0,0,.05)}
 nav::-webkit-scrollbar{display:none}
 nav a{flex:0 0 auto;padding:11px 15px;font-size:14px;font-weight:600;color:var(--muted);
-  text-decoration:none;border-bottom:3px solid transparent;white-space:nowrap}
+text-decoration:none;border-bottom:3px solid transparent;white-space:nowrap}
 nav a.on{color:var(--wine);border-bottom-color:var(--wine)}
-
 .wrap{padding:14px 14px 40px;max-width:640px;margin:0 auto}
-
 .info{background:#fff;border:1px solid var(--line);border-radius:12px;padding:13px 14px;margin-bottom:10px}
 .info .k{font-size:11px;letter-spacing:1px;color:var(--muted);font-weight:700;margin-bottom:3px}
 .info .v{font-size:15px;font-weight:600;line-height:1.35}
-
-.warn{background:var(--warn-bg);border:1px solid var(--warn);border-radius:12px;
-  padding:13px 14px;margin:14px 0 4px;font-size:14px}
+.warn{background:var(--warn-bg);border:1px solid var(--warn);border-radius:12px;padding:13px 14px;margin:14px 0 4px;font-size:14px}
 .warn h3{color:var(--warn);font-size:14px;margin-bottom:6px}
 .warn p{margin-bottom:7px}.warn p:last-child{margin-bottom:0}
-
 .day{margin-top:26px;scroll-margin-top:52px}
-.day > h2{background:var(--ink);color:#fff;border-radius:10px 10px 0 0;
-  padding:10px 14px;font-size:16px;display:flex;justify-content:space-between;align-items:center}
-.day > h2 em{font-style:normal;font-size:11.5px;font-weight:400;opacity:.8}
-.day.today > h2{background:var(--wine)}
+.day>h2{background:var(--ink);color:#fff;border-radius:10px 10px 0 0;padding:10px 14px;font-size:16px;
+display:flex;justify-content:space-between;align-items:center}
+.day>h2 em{font-style:normal;font-size:11.5px;font-weight:400;opacity:.8}
+.day.today>h2{background:var(--wine)}
 .items{background:#fff;border:1px solid var(--line);border-top:none;border-radius:0 0 10px 10px;overflow:hidden}
-
 .it{padding:12px 14px;border-top:1px solid var(--line);display:flex;gap:11px}
 .it:first-child{border-top:none}
 .it .tm{flex:0 0 62px;font-weight:700;font-size:13.5px;padding-top:1px}
 .it .bd{flex:1;min-width:0}
 .it .ti{font-weight:600;font-size:15.5px;line-height:1.3}
-.it .lo{font-size:13px;color:var(--muted);margin-top:3px}
-.it .ad{font-size:13px;color:var(--ink);margin-top:4px;font-weight:500}
-
-.it.go{background:var(--blue-bg)}
-.it.go .tm{color:var(--blue)}
-.it.go .ti{color:var(--blue);font-size:15px}
-.it.go .meta{font-size:13px;color:var(--blue);margin-top:3px;font-weight:600}
-.it.star{background:#fff8e1}
-.it.alert .ti{color:var(--warn)}
-
-a.map{display:inline-flex;align-items:center;gap:5px;margin-top:8px;margin-right:6px;
-  background:var(--wine);color:#fff;text-decoration:none;font-size:13px;font-weight:600;
-  padding:8px 13px;border-radius:20px}
+.it .ad{font-size:13px;margin-top:4px;font-weight:500}
+.it .lo{font-size:13px;color:var(--muted);margin-top:4px}
+.it.go{background:var(--blue-bg)}.it.go .tm{color:var(--blue)}.it.go .ti{color:var(--blue);font-size:15px}
+.it.star{background:#fff8e1}.it.alert .ti{color:var(--warn)}
+.tbadge{display:inline-block;margin-top:6px;background:#fff;border:1px solid var(--blue);color:var(--blue);
+font-size:12.5px;font-weight:700;padding:5px 10px;border-radius:16px;line-height:1.35}
+.it:not(.go) .tbadge{border-color:var(--muted);color:var(--ink)}
+a.map{display:inline-flex;align-items:center;gap:5px;margin-top:8px;margin-right:6px;background:var(--wine);
+color:#fff;text-decoration:none;font-size:13px;font-weight:600;padding:8px 13px;border-radius:20px}
 a.map:active{background:var(--wine-soft)}
-a.tel{background:#2b6b3f}
-a.alt{background:#5a5450}
-
+a.tel{background:#2b6b3f}a.alt{background:#5a5450}
+.mapwrap{margin-top:9px;border-radius:10px;overflow:hidden;border:1px solid var(--line);line-height:0;background:#eee}
+.mapwrap iframe{width:100%;height:170px;border:0;display:block}
 .tips{background:#fff;border:1px solid var(--line);border-radius:12px;padding:13px 14px;margin-top:22px;font-size:13.5px}
-.tips h3{font-size:14px;margin-bottom:7px}
-.tips li{margin:0 0 5px 17px;line-height:1.45}
+.tips h3{font-size:14px;margin-bottom:7px}.tips li{margin:0 0 5px 17px;line-height:1.45}
 footer{font-size:11.5px;color:var(--muted);text-align:center;margin-top:22px;line-height:1.6}
 </style></head><body>
-
-<header>
-  <h1>洛杉磯行程　7/19 – 7/23</h1>
-  <div class="sub">Getting Real ’26 · 每個地點都可點導航</div>
-</header>
-
-<nav id="nav">
-  <a href="#d19" data-d="19">7/19 抵達</a>
-  <a href="#d20" data-d="20">7/20 一</a>
-  <a href="#d21" data-d="21">7/21 二</a>
-  <a href="#d22" data-d="22">7/22 ⭐</a>
-  <a href="#d23" data-d="23">7/23 離開</a>
-</nav>
-
+<header><h1>洛杉磯行程　7/19 – 7/23</h1>
+<div class="sub">Getting Real ’26 · 每個地點皆附地圖與車程時間</div></header>
+<nav id="nav"><a href="#d19" data-d="19">7/19 抵達</a><a href="#d20" data-d="20">7/20 一</a><a href="#d21" data-d="21">7/21 二</a><a href="#d22" data-d="22">7/22 ⭐</a><a href="#d23" data-d="23">7/23 離開</a></nav>
 <div class="wrap">
-
-  <div class="info">
-    <div class="k">住宿 HOTEL</div>
-    <div class="v">Boutique KTown Stays</div>
-    <div class="ad">2827 James M Wood Blvd, Los Angeles, CA 90006</div>
-    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=2827+James+M+Wood+Blvd,+Los+Angeles,+CA+90006" target="_blank" rel="noopener">🧭 導航</a>
-    <a class="map tel" href="tel:+12137585028">📞 213-758-5028</a>
-  </div>
-
-  <div class="info">
-    <div class="k">主會場 JANM（小東京）</div>
-    <div class="v">Japanese American National Museum</div>
-    <div class="ad">100 N Central Ave, Los Angeles, CA 90012</div>
-    <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Japanese+American+National+Museum,+100+N+Central+Ave,+Los+Angeles,+CA+90012" target="_blank" rel="noopener">🧭 導航</a>
-  </div>
-
-  <div class="info">
-    <div class="k">7/23 機場用車（已預約）</div>
-    <div class="v">Uber XXL · 司機 朱大哥</div>
-    <div class="ad">15:00 JANM → Hollywood Burbank Airport</div>
-    <a class="map tel" href="tel:+16262236675">📞 626-223-6675</a>
-  </div>
-
-  <div class="warn">
-    <h3>⚠ 要注意的事</h3>
-    <p><b>7/21 撞期</b>：Picture Motion 會議（14:30–16:00 @580 Mateo St）與 GR Workshop（15:45–17:00 @JANM）重疊。兩場都去的話 <b>15:30 就要中離</b>。</p>
-    <p><b>7/23 轉場只有 15 分</b>：14:45 散場、15:00 要出發去 BUR。<br><b style="color:#2b6b3f">✅ 已預約 Uber XXL（朱大哥）—— 風險已排除，記得當天再確認一次。</b></p>
-  </div>
-
-  <!-- 7/19 -->
-  <section class="day" id="d19">
-    <h2>7/19（日）抵達<em>LAX 17:15</em></h2>
-    <div class="items">
-      <div class="it"><div class="tm">17:15</div><div class="bd">
-        <div class="ti">班機抵達 LAX</div>
-        <div class="ad">Los Angeles International Airport<br>1 World Way, Los Angeles, CA 90045</div>
-        <div class="lo">長榮 BR 12 · 入境＋提行李約 45–60 分</div>
-        <a class="map" href="https://www.google.com/maps/search/?api=1&query=Los+Angeles+International+Airport" target="_blank" rel="noopener">🧭 開地圖</a></div></div>
-
-      <div class="it go"><div class="tm">≈18:15</div><div class="bd">
-        <div class="ti">→ 搭 Uber 去飯店</div>
-        <div class="meta">約 14 英里 · 車程 30–50 分（傍晚尖峰）</div>
-        <div class="lo">Uber 招呼站在 <b>LAX-it</b>（第 1 航廈旁），出關後跟綠色 LAX-it 指標走或搭免費接駁</div>
-        <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=Los+Angeles+International+Airport&destination=2827+James+M+Wood+Blvd,+Los+Angeles,+CA+90006" target="_blank" rel="noopener">🧭 LAX → 飯店</a></div></div>
-
-      <div class="it"><div class="tm">≈19:00</div><div class="bd">
-        <div class="ti">飯店 Check-in</div>
-        <div class="ad">2827 James M Wood Blvd, Los Angeles, CA 90006</div>
-        <div class="lo">入住窗口 16:00–23:30，時間充裕</div>
-        <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=2827+James+M+Wood+Blvd,+Los+Angeles,+CA+90006" target="_blank" rel="noopener">🧭 導航</a></div></div>
-    </div>
-  </section>
-
-  <!-- 7/20 -->
-  <section class="day" id="d20">
-    <h2>7/20（一）<em>韓國城 → 小東京</em></h2>
-    <div class="items">
-      <div class="it go"><div class="tm">10:10</div><div class="bd">
-        <div class="ti">← 出發：飯店 → Openaire</div>
-        <div class="meta">約 1.5 英里 · 8–12 分（同在韓國城）</div>
-        <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=2827+James+M+Wood+Blvd,+Los+Angeles,+CA+90006&destination=Openaire,+3515+Wilshire+Blvd,+Los+Angeles,+CA+90010" target="_blank" rel="noopener">🧭 路線</a></div></div>
-
-      <div class="it"><div class="tm">10:30</div><div class="bd">
-        <div class="ti">洛院早餐會</div>
-        <div class="ad">Openaire（The LINE Hotel 屋頂）<br>3515 Wilshire Blvd, Los Angeles, CA 90010</div>
-        <div class="lo">至 12:00</div>
-        <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Openaire,+3515+Wilshire+Blvd,+Los+Angeles,+CA+90010" target="_blank" rel="noopener">🧭 導航</a></div></div>
-
-      <div class="it go"><div class="tm">12:10</div><div class="bd">
-        <div class="ti">← 出發：Openaire → Escala（同一區，很近）</div>
-        <div class="meta">約 0.4 英里 · 車程 3–6 分／<b>步行約 10 分鐘</b></div>
-        <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=3515+Wilshire+Blvd,+Los+Angeles,+CA+90010&destination=3451+W+6th+St,+Los+Angeles,+CA+90020" target="_blank" rel="noopener">🧭 路線</a></div></div>
-
-      <div class="it"><div class="tm">12:30</div><div class="bd">
-        <div class="ti">Giloo + Protege Lunch Meeting</div>
-        <div class="ad">Escala<br>3451 W 6th St, Los Angeles, CA 90020</div>
-        <div class="lo">至 14:00</div>
-        <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=3451+W+6th+St,+Los+Angeles,+CA+90020" target="_blank" rel="noopener">🧭 導航</a></div></div>
-
-      <div class="it"><div class="tm">14:00</div><div class="bd">
-        <div class="ti">午餐結束 → 回飯店</div>
-        <div class="lo">飯店就在附近（約 1.5 英里）· 車程 5–10 分</div></div></div>
-
-      <div class="it star"><div class="tm">14:30<br>–17:10</div><div class="bd">
-        <div class="ti">🛠 飯店準備時間（約 2 小時 40 分）</div>
-        <div class="lo"><b>建議做這些：</b><br>
-        · 7/21 Picture Motion 會議資料<br>
-        · <b>7/22 講座最後演練</b>（逐字稿唸一遍、抓時間）<br>
-        · 確認簡報檔在筆電＋USB＋雲端都有<br>
-        · 轉接頭、充電線收進包包</div></div></div>
-
-      <div class="it go"><div class="tm">17:10</div><div class="bd">
-        <div class="ti">← 出發：韓國城 → JANM</div>
-        <div class="meta">約 4.5 英里 · <b>30–40 分（傍晚尖峰）</b> · 目標 17:50 抵達</div>
-        <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=2827+James+M+Wood+Blvd,+Los+Angeles,+CA+90006&destination=Japanese+American+National+Museum,+100+N+Central+Ave,+Los+Angeles,+CA+90012" target="_blank" rel="noopener">🧭 飯店 → JANM</a>
-        <a class="map alt" href="https://www.google.com/maps/dir/?api=1&origin=3451+W+6th+St,+Los+Angeles,+CA+90020&destination=Japanese+American+National+Museum,+100+N+Central+Ave,+Los+Angeles,+CA+90012" target="_blank" rel="noopener">🧭 Escala → JANM</a></div></div>
-
-      <div class="it"><div class="tm">18:00</div><div class="bd">
-        <div class="ti">領 Pass（報到）</div>
-        <div class="ad">JANM 大廳<br>100 N Central Ave, Los Angeles, CA 90012</div>
-        <div class="lo">7/20 報到開放 11:00–<b>20:00</b>（你有 2 小時緩衝）· <b>記得帶附照片證件</b></div>
-        <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Japanese+American+National+Museum,+100+N+Central+Ave,+Los+Angeles,+CA+90012" target="_blank" rel="noopener">🧭 導航</a></div></div>
-
-      <div class="it"><div class="tm">18:15</div><div class="bd">
-        <div class="ti">在小東京簡單吃個東西</div>
-        <div class="lo">開幕晚會 19:00 就在同一棟，不用移動。<br>步行可到：Sushi Gen、Marugame Monzo、Hama Sushi、Izakaya Ozen</div></div></div>
-
-      <div class="it"><div class="tm">19:00</div><div class="bd">
-        <div class="ti">GR ’26 開幕晚會</div>
-        <div class="ad">JANM · 100 N Central Ave, Los Angeles, CA 90012</div>
-        <div class="lo">至 21:00</div>
-        <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Japanese+American+National+Museum,+100+N+Central+Ave,+Los+Angeles,+CA+90012" target="_blank" rel="noopener">🧭 導航</a></div></div>
-    </div>
-  </section>
-
-  <!-- 7/21 -->
-  <section class="day" id="d21">
-    <h2>7/21（二）<em>⚠ 下午撞期</em></h2>
-    <div class="items">
-      <div class="it go"><div class="tm">11:50</div><div class="bd">
-        <div class="ti">← 出發：飯店 → JANM</div><div class="meta">20–30 分</div>
-        <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=2827+James+M+Wood+Blvd,+Los+Angeles,+CA+90006&destination=Japanese+American+National+Museum,+100+N+Central+Ave,+Los+Angeles,+CA+90012" target="_blank" rel="noopener">🧭 路線</a></div></div>
-
-      <div class="it"><div class="tm">12:30</div><div class="bd">
-        <div class="ti">Industry Expo Lunch（Giloo 展位）</div>
-        <div class="ad">JANM · 100 N Central Ave, Los Angeles, CA 90012</div>
-        <div class="lo">至 14:00 · 建議提早 15 分到布置展位</div>
-        <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Japanese+American+National+Museum,+100+N+Central+Ave,+Los+Angeles,+CA+90012" target="_blank" rel="noopener">🧭 導航</a></div></div>
-
-      <div class="it go"><div class="tm">14:15</div><div class="bd">
-        <div class="ti">← 出發：JANM → 580 Mateo St</div>
-        <div class="meta">約 1.2 英里 · 6–10 分（步行約 20 分）</div>
-        <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=Japanese+American+National+Museum,+100+N+Central+Ave,+Los+Angeles,+CA+90012&destination=580+Mateo+St,+Los+Angeles,+CA+90013" target="_blank" rel="noopener">🧭 路線</a></div></div>
-
-      <div class="it"><div class="tm">14:30</div><div class="bd">
-        <div class="ti">Giloo × Picture Motion Meeting</div>
-        <div class="ad">580 Mateo St, Los Angeles, CA 90013（藝術區）</div>
-        <div class="lo">至 16:00</div>
-        <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=580+Mateo+St,+Los+Angeles,+CA+90013" target="_blank" rel="noopener">🧭 導航</a></div></div>
-
-      <div class="it star alert"><div class="tm">15:45</div><div class="bd">
-        <div class="ti">⚠ GR Workshop: AI Tools</div>
-        <div class="ad">JANM · 100 N Central Ave, Los Angeles, CA 90012</div>
-        <div class="lo">至 17:00 · <b>與上一場重疊＋需移動 → 最晚 15:30 離開會議</b></div>
-        <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=580+Mateo+St,+Los+Angeles,+CA+90013&destination=Japanese+American+National+Museum,+100+N+Central+Ave,+Los+Angeles,+CA+90012" target="_blank" rel="noopener">🧭 580 Mateo → JANM</a></div></div>
-
-      <div class="it"><div class="tm">19:00</div><div class="bd">
-        <div class="ti">GR：金門顏色 特別放映</div>
-        <div class="ad">JANM · 100 N Central Ave, Los Angeles, CA 90012</div>
-        <div class="lo">至 20:30 · 空檔 17:00–18:40 可在小東京吃飯（Sushi Gen、Marugame Monzo 步行可到）</div>
-        <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Japanese+American+National+Museum,+100+N+Central+Ave,+Los+Angeles,+CA+90012" target="_blank" rel="noopener">🧭 導航</a></div></div>
-    </div>
-  </section>
-
-  <!-- 7/22 -->
-  <section class="day" id="d22">
-    <h2>7/22（三）<em>⭐ 你的主場</em></h2>
-    <div class="items">
-      <div class="it go"><div class="tm">09:15</div><div class="bd">
-        <div class="ti">← 出發：飯店 → JANM（提早！）</div>
-        <div class="meta">25–40 分（早尖峰）· 目標 09:45 抵達</div>
-        <div class="lo">留 30 分鐘測投影、音響、簡報檔</div>
-        <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=2827+James+M+Wood+Blvd,+Los+Angeles,+CA+90006&destination=Japanese+American+National+Museum,+100+N+Central+Ave,+Los+Angeles,+CA+90012" target="_blank" rel="noopener">🧭 路線</a></div></div>
-
-      <div class="it star"><div class="tm">10:15</div><div class="bd">
-        <div class="ti">⭐ GR: Giloo Session（你要講的）</div>
-        <div class="ad">JANM · 100 N Central Ave, Los Angeles, CA 90012</div>
-        <div class="lo">至 11:45<br><b>帶：</b>筆電、轉接頭、簡報 PDF/Keynote、印出的逐字稿、備用 USB</div>
-        <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Japanese+American+National+Museum,+100+N+Central+Ave,+Los+Angeles,+CA+90012" target="_blank" rel="noopener">🧭 導航</a></div></div>
-
-      <div class="it"><div class="tm">12:30</div><div class="bd">
-        <div class="ti">Orly 會面（暫定）</div>
-        <div class="ad" style="color:#b3261e">地點未定 —— 確認後才能算車程</div>
-        <div class="lo">至 14:30 · 若在小東京附近可直接步行</div></div></div>
-
-      <div class="it go"><div class="tm">18:15</div><div class="bd">
-        <div class="ti">← 出發：飯店 → LA Artcore</div>
-        <div class="lo" style="color:#b3261e">兩個館別差很多，請先確認是哪一個：</div>
-        <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=LA+Artcore+Union+Center+for+the+Arts,+120+Judge+John+Aiso+St,+Los+Angeles,+CA+90012" target="_blank" rel="noopener">🧭 Union Center（小東京）</a>
-        <a class="map alt" href="https://www.google.com/maps/dir/?api=1&destination=LA+Artcore+Brewery+Annex,+650A+S+Avenue+21,+Los+Angeles,+CA+90031" target="_blank" rel="noopener">🧭 Brewery Annex</a>
-        <div class="lo">空檔 14:30–18:00 建議回飯店休息（講完會累）</div></div></div>
-
-      <div class="it"><div class="tm">19:00</div><div class="bd">
-        <div class="ti">A-DOC Birthday Party</div>
-        <div class="ad">LA Artcore<br>· Union Center: 120 Judge John Aiso St, LA 90012<br>· Brewery Annex: 650A S Avenue 21, LA 90031</div>
-        <div class="lo">至 21:00</div></div></div>
-    </div>
-  </section>
-
-  <!-- 7/23 -->
-  <section class="day" id="d23">
-    <h2>7/23（四）離開<em>⚠ 全天最緊</em></h2>
-    <div class="items">
-      <div class="it"><div class="tm">–09:00</div><div class="bd">
-        <div class="ti">退房</div>
-        <div class="ad">2827 James M Wood Blvd, Los Angeles, CA 90006</div>
-        <div class="lo">窗口 07:00–11:00 · <b>建議 09:00 前完成，行李帶著走</b></div></div></div>
-
-      <div class="it go"><div class="tm">09:10</div><div class="bd">
-        <div class="ti">← 帶行李出發：飯店 → JANM</div>
-        <div class="meta">25–40 分（早尖峰＋有行李）</div>
-        <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=2827+James+M+Wood+Blvd,+Los+Angeles,+CA+90006&destination=Japanese+American+National+Museum,+100+N+Central+Ave,+Los+Angeles,+CA+90012" target="_blank" rel="noopener">🧭 路線</a></div></div>
-
-      <div class="it"><div class="tm">≈09:45</div><div class="bd">
-        <div class="ti">抵達會場放行李</div>
-        <div class="ad">JANM · 100 N Central Ave, Los Angeles, CA 90012</div>
-        <div class="lo">先確認 JANM 可否寄放，不行需改用車站寄物或請人代看</div></div></div>
-
-      <div class="it"><div class="tm">11:30</div><div class="bd">
-        <div class="ti">GR: CNEX Session</div>
-        <div class="ad">JANM · 100 N Central Ave, Los Angeles, CA 90012</div>
-        <div class="lo">至 13:30</div></div></div>
-
-      <div class="it"><div class="tm">13:30</div><div class="bd">
-        <div class="ti">GR: State of the Business</div>
-        <div class="ad">JANM · 100 N Central Ave, Los Angeles, CA 90012</div>
-        <div class="lo">至 14:45</div></div></div>
-
-      <div class="it star alert"><div class="tm">14:45</div><div class="bd">
-        <div class="ti">拿行李 → 上車（15 分鐘）</div>
-        <div class="lo">✅ <b>車已預約</b>，散場後直接到 JANM 門口會合<br>建議 14:40 先傳訊息跟司機確認位置</div>
-        <a class="map tel" href="tel:+16262236675">📞 朱大哥 626-223-6675</a></div></div>
-
-      <div class="it go"><div class="tm">15:00</div><div class="bd">
-        <div class="ti">← 出發前往 BUR 機場</div>
-        <div class="meta">約 15 英里 · 30–50 分（走 US-101 北上）· 預計 15:40–16:00 抵達</div>
-        <div class="lo"><b>🚐 Uber XXL 已預約 · 司機：朱大哥</b></div>
-        <a class="map tel" href="tel:+16262236675">📞 626-223-6675</a>
-        <a class="map" href="https://www.google.com/maps/dir/?api=1&origin=Japanese+American+National+Museum,+100+N+Central+Ave,+Los+Angeles,+CA+90012&destination=Hollywood+Burbank+Airport,+2627+N+Hollywood+Way,+Burbank,+CA+91505" target="_blank" rel="noopener">🧭 JANM → BUR</a></div></div>
-
-      <div class="it"><div class="tm">17:55</div><div class="bd">
-        <div class="ti">西南航空 BUR → SJC</div>
-        <div class="ad">Hollywood Burbank Airport<br>2627 N Hollywood Way, Burbank, CA 91505</div>
-        <div class="lo">19:05 抵達聖荷西 · BUR 是小機場，提前 1.5 小時足夠 → <b>16:25 前到即可，有 25–45 分緩衝</b></div>
-        <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Hollywood+Burbank+Airport,+2627+N+Hollywood+Way,+Burbank,+CA+91505" target="_blank" rel="noopener">🧭 導航</a></div></div>
-    </div>
-  </section>
-
-  <div class="tips">
-    <h3>洛杉磯交通提醒</h3>
-    <ul>
-      <li><b>尖峰：</b>早 07:00–10:00、晚 15:00–19:00，車程可能多 50–100%（上表已抓寬）</li>
-      <li><b>一律叫 Uber/Lyft</b>，別自駕 —— 小東京與韓國城停車位少又貴（每次 $15–25）</li>
-      <li><b>韓國城 ↔ 小東京</b>約 4–5 英里：離峰 15–20 分、尖峰 25–40 分</li>
-      <li>Metro B/D 線（Wilshire/Vermont → Union Station）約 25–30 分不塞車，但要走 10 分鐘到 JANM</li>
-      <li><b>每段多抓 10 分鐘</b>，尤其 7/22 你要上台那天</li>
-    </ul>
-  </div>
-
-  <footer>
-    車程為依實際距離之估算區間（非即時路況），當天請以 Google Maps 為準。<br>
-    待確認：Orly 地點 · LA Artcore 館別 · JANM 能否寄行李
-  </footer>
+ <div class="info"><div class="k">住宿 HOTEL</div>
+  <div class="v">Boutique KTown Stays</div>
+  <div class="ad">2827 James M Wood Blvd, Los Angeles, CA 90006</div>
+  <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=2827+James+M+Wood+Blvd,+Los+Angeles,+CA+90006" target="_blank" rel="noopener">🧭 導航</a>
+  <a class="map tel" href="tel:+12137585028">📞 213-758-5028</a></div>
+ <div class="info"><div class="k">主會場 JANM（小東京）</div>
+  <div class="v">Japanese American National Museum</div>
+  <div class="ad">100 N Central Ave, Los Angeles, CA 90012</div>
+  <a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Japanese+American+National+Museum,+100+N+Central+Ave,+Los+Angeles,+CA+90012" target="_blank" rel="noopener">🧭 導航</a></div>
+ <div class="warn"><h3>⚠ 需注意</h3>
+  <p><b>7/21 下午時段重疊</b>：Picture Motion 會議（14:30–16:00 @580 Mateo St）與 GR Workshop（15:45–17:00 @JANM）重疊。兩場都要參加的話，最晚 15:30 需離開會議。</p>
+  <p><b>7/23 轉場僅 15 分鐘</b>：14:45 散場、15:00 出發前往 BUR。<b style="color:#2b6b3f">✅ Uber XXL 已預約（朱大哥），當天再確認一次。</b></p></div>
+ <section class="day" id="d19"><h2>7/19（日）抵達<em>LAX 17:15</em></h2><div class="items"><div class="it "><div class="tm">17:15</div><div class="bd"><div class="ti">班機抵達 LAX</div><div class="ad">Los Angeles International Airport<br>1 World Way, Los Angeles, CA 90045</div><div class="lo">長榮 BR 12 · 入境＋提行李約 45–60 分</div><div class="mapwrap"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Los+Angeles+International+Airport&output=embed"></iframe></div></div></div><div class="it go"><div class="tm">≈18:15</div><div class="bd"><div class="ti">→ 搭 Uber 前往飯店</div><div class="tbadge">🚗 約 14 英里 · 車程 30–50 分（傍晚尖峰）</div><div class="lo">Uber 招呼站在 <b>LAX-it</b>（第 1 航廈旁），出關後跟綠色 LAX-it 指標走或搭免費接駁</div><div class="mapwrap"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?saddr=Los+Angeles+International+Airport&daddr=2827+James+M+Wood+Blvd,+Los+Angeles,+CA+90006&output=embed"></iframe></div></div></div><div class="it "><div class="tm">≈19:00</div><div class="bd"><div class="ti">飯店 Check-in</div><div class="ad">Boutique KTown Stays<br>2827 James M Wood Blvd, Los Angeles, CA 90006</div><div class="lo">入住窗口 16:00–23:30</div><a class="map" href="https://www.google.com/maps/dir/?api=1&destination=2827+James+M+Wood+Blvd,+Los+Angeles,+CA+90006" target="_blank" rel="noopener">🧭 導航</a><div class="mapwrap"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=2827+James+M+Wood+Blvd,+Los+Angeles,+CA+90006&output=embed"></iframe></div></div></div></div></section><section class="day" id="d20"><h2>7/20（一）<em>韓國城 → 小東京</em></h2><div class="items"><div class="it go"><div class="tm">10:10</div><div class="bd"><div class="ti">← 出發：飯店 → Openaire</div><div class="tbadge">🚗 約 1.5 英里 · 車程 8–12 分</div><div class="mapwrap"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?saddr=2827+James+M+Wood+Blvd,+Los+Angeles,+CA+90006&daddr=Openaire,+3515+Wilshire+Blvd,+Los+Angeles,+CA+90010&output=embed"></iframe></div></div></div><div class="it "><div class="tm">10:30</div><div class="bd"><div class="ti">洛院早餐會</div><div class="ad">Openaire（The LINE Hotel 屋頂）<br>3515 Wilshire Blvd, Los Angeles, CA 90010</div><div class="lo">至 12:00</div><a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Openaire,+3515+Wilshire+Blvd,+Los+Angeles,+CA+90010" target="_blank" rel="noopener">🧭 導航</a><div class="mapwrap"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Openaire,+3515+Wilshire+Blvd,+Los+Angeles,+CA+90010&output=embed"></iframe></div></div></div><div class="it go"><div class="tm">12:10</div><div class="bd"><div class="ti">← 出發：Openaire → Escala</div><div class="tbadge">🚶 約 0.4 英里 · <b>步行 10 分</b>／車程 3–6 分</div><div class="mapwrap"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?saddr=Openaire,+3515+Wilshire+Blvd,+Los+Angeles,+CA+90010&daddr=3451+W+6th+St,+Los+Angeles,+CA+90020&output=embed"></iframe></div></div></div><div class="it "><div class="tm">12:30</div><div class="bd"><div class="ti">Giloo + Protege Lunch Meeting</div><div class="ad">Escala<br>3451 W 6th St, Los Angeles, CA 90020</div><div class="lo">至 14:00</div><a class="map" href="https://www.google.com/maps/dir/?api=1&destination=3451+W+6th+St,+Los+Angeles,+CA+90020" target="_blank" rel="noopener">🧭 導航</a><div class="mapwrap"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=3451+W+6th+St,+Los+Angeles,+CA+90020&output=embed"></iframe></div></div></div><div class="it "><div class="tm">14:00</div><div class="bd"><div class="ti">午餐結束 → 回飯店</div><div class="lo">飯店在附近（約 1.5 英里）· 車程 5–10 分</div><div class="mapwrap"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?saddr=3451+W+6th+St,+Los+Angeles,+CA+90020&daddr=2827+James+M+Wood+Blvd,+Los+Angeles,+CA+90006&output=embed"></iframe></div></div></div><div class="it star"><div class="tm">14:30<br>–17:10</div><div class="bd"><div class="ti">飯店休息／自由時間</div><div class="lo">下午空檔</div></div></div><div class="it go"><div class="tm">17:10</div><div class="bd"><div class="ti">← 出發：飯店 → JANM</div><div class="tbadge">🚗 約 4.5 英里 · 車程 30–40 分（傍晚尖峰）· 目標 17:50 抵達</div><div class="mapwrap"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?saddr=2827+James+M+Wood+Blvd,+Los+Angeles,+CA+90006&daddr=Japanese+American+National+Museum,+100+N+Central+Ave,+Los+Angeles,+CA+90012&output=embed"></iframe></div></div></div><div class="it "><div class="tm">18:00</div><div class="bd"><div class="ti">領 Pass（報到）</div><div class="ad">JANM 大廳<br>100 N Central Ave, Los Angeles, CA 90012</div><div class="lo">7/20 報到開放 11:00–<b>20:00</b> · <b>記得帶附照片證件</b></div><a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Japanese+American+National+Museum,+100+N+Central+Ave,+Los+Angeles,+CA+90012" target="_blank" rel="noopener">🧭 導航</a><div class="mapwrap"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Japanese+American+National+Museum,+100+N+Central+Ave,+Los+Angeles,+CA+90012&output=embed"></iframe></div></div></div><div class="it "><div class="tm">18:15</div><div class="bd"><div class="ti">在小東京簡單用餐</div><div class="lo">開幕晚會 19:00 就在同一棟，不用移動。<br>步行可到：Sushi Gen、Marugame Monzo、Hama Sushi、Izakaya Ozen</div></div></div><div class="it "><div class="tm">19:00</div><div class="bd"><div class="ti">GR ’26 開幕晚會</div><div class="ad">JANM · 100 N Central Ave, Los Angeles, CA 90012</div><div class="lo">至 21:00</div></div></div></div></section><section class="day" id="d21"><h2>7/21（二）<em>⚠ 下午時段重疊</em></h2><div class="items"><div class="it go"><div class="tm">11:50</div><div class="bd"><div class="ti">← 出發：飯店 → JANM</div><div class="tbadge">🚗 約 4.5 英里 · 車程 20–30 分</div><div class="mapwrap"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?saddr=2827+James+M+Wood+Blvd,+Los+Angeles,+CA+90006&daddr=Japanese+American+National+Museum,+100+N+Central+Ave,+Los+Angeles,+CA+90012&output=embed"></iframe></div></div></div><div class="it "><div class="tm">12:30</div><div class="bd"><div class="ti">Industry Expo Lunch（Giloo 展位）</div><div class="ad">JANM · 100 N Central Ave, Los Angeles, CA 90012</div><div class="lo">至 14:00 · 建議提早 15 分到布置展位</div><a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Japanese+American+National+Museum,+100+N+Central+Ave,+Los+Angeles,+CA+90012" target="_blank" rel="noopener">🧭 導航</a></div></div><div class="it go"><div class="tm">14:15</div><div class="bd"><div class="ti">← 出發：JANM → 580 Mateo St</div><div class="tbadge">🚗 約 1.2 英里 · 車程 6–10 分／步行約 20 分</div><div class="mapwrap"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?saddr=Japanese+American+National+Museum,+100+N+Central+Ave,+Los+Angeles,+CA+90012&daddr=580+Mateo+St,+Los+Angeles,+CA+90013&output=embed"></iframe></div></div></div><div class="it "><div class="tm">14:30</div><div class="bd"><div class="ti">Giloo × Picture Motion Meeting</div><div class="ad">580 Mateo St, Los Angeles, CA 90013（藝術區）</div><div class="lo">至 16:00</div><a class="map" href="https://www.google.com/maps/dir/?api=1&destination=580+Mateo+St,+Los+Angeles,+CA+90013" target="_blank" rel="noopener">🧭 導航</a><div class="mapwrap"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=580+Mateo+St,+Los+Angeles,+CA+90013&output=embed"></iframe></div></div></div><div class="it star alert"><div class="tm">15:45</div><div class="bd"><div class="ti">⚠ GR Workshop: AI Tools</div><div class="tbadge">🚗 580 Mateo → JANM 約 6–10 分</div><div class="ad">JANM · 100 N Central Ave, Los Angeles, CA 90012</div><div class="lo">至 17:00 · <b>與上一場重疊＋需移動 → 兩場都要參加的話，最晚 15:30 離開會議</b></div><div class="mapwrap"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?saddr=580+Mateo+St,+Los+Angeles,+CA+90013&daddr=Japanese+American+National+Museum,+100+N+Central+Ave,+Los+Angeles,+CA+90012&output=embed"></iframe></div></div></div><div class="it "><div class="tm">19:00</div><div class="bd"><div class="ti">GR：金門顏色 特別放映</div><div class="ad">JANM · 100 N Central Ave, Los Angeles, CA 90012</div><div class="lo">至 20:30 · 空檔 17:00–18:40 可在小東京用餐</div></div></div></div></section><section class="day" id="d22"><h2>7/22（三）<em>⭐ Giloo Session</em></h2><div class="items"><div class="it go"><div class="tm">09:15</div><div class="bd"><div class="ti">← 出發：飯店 → JANM（提早）</div><div class="tbadge">🚗 約 4.5 英里 · 車程 25–40 分（早上尖峰）</div><div class="lo">目標 09:45 抵達，留 30 分鐘測試場地設備</div><div class="mapwrap"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?saddr=2827+James+M+Wood+Blvd,+Los+Angeles,+CA+90006&daddr=Japanese+American+National+Museum,+100+N+Central+Ave,+Los+Angeles,+CA+90012&output=embed"></iframe></div></div></div><div class="it star"><div class="tm">10:15</div><div class="bd"><div class="ti">⭐ GR: Giloo Session</div><div class="ad">JANM · 100 N Central Ave, Los Angeles, CA 90012</div><div class="lo">至 11:45</div><a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Japanese+American+National+Museum,+100+N+Central+Ave,+Los+Angeles,+CA+90012" target="_blank" rel="noopener">🧭 導航</a></div></div><div class="it "><div class="tm">12:30</div><div class="bd"><div class="ti">Orly（The Film Collaborative）會面</div><div class="ad"><span style='color:#b3261e'>地點待確認</span></div><div class="lo">至 14:30 · 若約在會場附近可直接步行</div></div></div><div class="it "><div class="tm">14:30</div><div class="bd"><div class="ti">自由時間</div><div class="lo">至 18:00</div></div></div><div class="it go"><div class="tm">18:15</div><div class="bd"><div class="ti">← 出發：飯店 → LA Artcore</div><div class="lo"><span style='color:#b3261e'>LA Artcore 有兩個館，請先確認是哪一個：</span></div><a class="map" href="https://www.google.com/maps/dir/?api=1&destination=LA+Artcore+Union+Center+for+the+Arts,+120+Judge+John+Aiso+St,+Los+Angeles,+CA+90012" target="_blank" rel="noopener">🧭 Union Center（小東京）</a><a class="map alt" href="https://www.google.com/maps/dir/?api=1&destination=LA+Artcore+Brewery+Annex,+650A+S+Avenue+21,+Los+Angeles,+CA+90031" target="_blank" rel="noopener">🧭 Brewery Annex</a><div class="mapwrap"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?saddr=2827+James+M+Wood+Blvd,+Los+Angeles,+CA+90006&daddr=LA+Artcore+Union+Center+for+the+Arts,+120+Judge+John+Aiso+St,+Los+Angeles,+CA+90012&output=embed"></iframe></div></div></div><div class="it "><div class="tm">19:00</div><div class="bd"><div class="ti">A-DOC Birthday Party</div><div class="ad">LA Artcore<br>· Union Center: 120 Judge John Aiso St, LA 90012<br>· Brewery Annex: 650A S Avenue 21, LA 90031</div><div class="lo">至 21:00</div></div></div></div></section><section class="day" id="d23"><h2>7/23（四）離開<em>⚠ 全天最緊</em></h2><div class="items"><div class="it "><div class="tm">–09:00</div><div class="bd"><div class="ti">退房</div><div class="ad">Boutique KTown Stays<br>2827 James M Wood Blvd, Los Angeles, CA 90006</div><div class="lo">退房窗口 07:00–11:00 · <b>建議 09:00 前完成，行李帶著走</b></div></div></div><div class="it go"><div class="tm">09:10</div><div class="bd"><div class="ti">← 帶行李出發：飯店 → JANM</div><div class="tbadge">🚗 約 4.5 英里 · 車程 25–40 分（早尖峰＋行李）</div><div class="mapwrap"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?saddr=2827+James+M+Wood+Blvd,+Los+Angeles,+CA+90006&daddr=Japanese+American+National+Museum,+100+N+Central+Ave,+Los+Angeles,+CA+90012&output=embed"></iframe></div></div></div><div class="it "><div class="tm">≈09:45</div><div class="bd"><div class="ti">抵達會場放行李</div><div class="ad">JANM · 100 N Central Ave, Los Angeles, CA 90012</div><div class="lo">需先確認 JANM 可否寄放行李</div></div></div><div class="it "><div class="tm">11:30</div><div class="bd"><div class="ti">GR: CNEX Session</div><div class="ad">JANM · 100 N Central Ave, Los Angeles, CA 90012</div><div class="lo">至 13:30</div></div></div><div class="it "><div class="tm">13:30</div><div class="bd"><div class="ti">GR: State of the Business</div><div class="ad">JANM · 100 N Central Ave, Los Angeles, CA 90012</div><div class="lo">至 14:45</div></div></div><div class="it star"><div class="tm">14:45</div><div class="bd"><div class="ti">拿行李 → 上車（15 分鐘）</div><div class="lo">✅ <b>車已預約</b>，散場後到 JANM 門口會合<br>建議 14:40 先傳訊息確認位置</div><a class="map tel" href="tel:+16262236675">📞 朱大哥 626-223-6675</a></div></div><div class="it go"><div class="tm">15:00</div><div class="bd"><div class="ti">← 出發前往 BUR 機場</div><div class="tbadge">🚗 約 15 英里 · 車程 30–50 分（走 US-101 北上）· 預計 15:40–16:00 抵達</div><div class="lo"><b>🚐 Uber XXL 已預約 · 司機 朱大哥</b></div><a class="map tel" href="tel:+16262236675">📞 626-223-6675</a><div class="mapwrap"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?saddr=Japanese+American+National+Museum,+100+N+Central+Ave,+Los+Angeles,+CA+90012&daddr=Hollywood+Burbank+Airport,+2627+N+Hollywood+Way,+Burbank,+CA+91505&output=embed"></iframe></div></div></div><div class="it "><div class="tm">17:55</div><div class="bd"><div class="ti">西南航空 BUR → SJC</div><div class="ad">Hollywood Burbank Airport<br>2627 N Hollywood Way, Burbank, CA 91505</div><div class="lo">19:05 抵達聖荷西 · BUR 為小機場，提前 1.5 小時足夠 → 16:25 前到即可</div><a class="map" href="https://www.google.com/maps/dir/?api=1&destination=Hollywood+Burbank+Airport,+2627+N+Hollywood+Way,+Burbank,+CA+91505" target="_blank" rel="noopener">🧭 導航</a><div class="mapwrap"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Hollywood+Burbank+Airport,+2627+N+Hollywood+Way,+Burbank,+CA+91505&output=embed"></iframe></div></div></div></div></section>
+ <div class="tips"><h3>洛杉磯交通提醒</h3><ul>
+  <li><b>尖峰時段：</b>早 07:00–10:00、晚 15:00–19:00，車程可能多 50–100%（表上已抓寬）</li>
+  <li><b>建議一律叫 Uber/Lyft</b> —— 小東京與韓國城停車位少且貴（每次 $15–25）</li>
+  <li><b>韓國城 ↔ 小東京</b>約 4–5 英里：離峰 15–20 分、尖峰 25–40 分</li>
+  <li>Metro B/D 線（Wilshire/Vermont → Union Station）約 25–30 分不受路況影響，但需步行 10 分鐘至 JANM</li>
+  <li><b>每段行程建議多抓 10 分鐘</b></li></ul></div>
+ <footer>車程為依實際距離之估算區間（非即時路況），當天請以 Google Maps 顯示為準。<br>
+ 待確認：Orly 會面地點 · LA Artcore 館別 · JANM 能否寄放行李</footer>
 </div>
-
 <script>
-(function(){
-  var d=new Date(), m=d.getMonth()+1, day=d.getDate(), id=null;
-  if(m===7 && day>=19 && day<=23) id='d'+day;
-  if(id){
-    var s=document.getElementById(id);
-    if(s){ s.classList.add('today');
-      var a=document.querySelector('nav a[data-d="'+day+'"]'); if(a) a.classList.add('on');
-      setTimeout(function(){ s.scrollIntoView({behavior:'smooth',block:'start'}); },350);
-    }
-  }
-  var secs=[].slice.call(document.querySelectorAll('.day'));
-  var links=[].slice.call(document.querySelectorAll('nav a'));
-  window.addEventListener('scroll', function(){
-    var y=window.scrollY+80, cur=null;
-    secs.forEach(function(s){ if(s.offsetTop<=y) cur=s.id; });
-    if(cur){ links.forEach(function(l){ l.classList.toggle('on', l.getAttribute('href')==='#'+cur); }); }
-  }, {passive:true});
-})();
-</script>
-</body></html>
+(function(){var d=new Date(),m=d.getMonth()+1,day=d.getDate(),id=null;
+if(m===7&&day>=19&&day<=23)id='d'+day;
+if(id){var s=document.getElementById(id);if(s){s.classList.add('today');
+var a=document.querySelector('nav a[data-d="'+day+'"]');if(a)a.classList.add('on');
+setTimeout(function(){s.scrollIntoView({behavior:'smooth',block:'start'})},350);}}
+var secs=[].slice.call(document.querySelectorAll('.day')),links=[].slice.call(document.querySelectorAll('nav a'));
+window.addEventListener('scroll',function(){var y=window.scrollY+80,cur=null;
+secs.forEach(function(s){if(s.offsetTop<=y)cur=s.id});
+if(cur)links.forEach(function(l){l.classList.toggle('on',l.getAttribute('href')==='#'+cur)})},{passive:true});})();
+</script></body></html>
